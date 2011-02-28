@@ -1,0 +1,106 @@
+@darkGrey: #636363;
+@lightGrey: #D1D1D1;
+@dirtyWhite: #F3F3F3;
+@grey: #A2A2A2;
+@lightBlue: #E2E5FF;
+@headerFont: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+
+#tabs {
+	height: 700px;
+	margin-top:5px;
+}
+
+.ui-tabs-nav {
+	
+}
+
+.ui-state-default {
+	border:1px solid black;
+	margin: 0 2px;
+	color: @darkGrey;
+	background-color: @dirtyWhite;
+	border:1px solid @darkGrey;
+	-moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; 
+}
+
+.ui-state-active {
+	background-color:@lightBlue;
+	border-bottom:none;
+	position:relative;
+}
+
+#main {
+	height: 601px;
+}
+
+#leftPane {
+	height: 100%;
+}
+
+#leftContent {
+	border-right:1px solid @grey;
+	height:100%;
+	
+	header {
+		font: 17px Helvetica, "Trebuchet MS", Verdana, sans-serif;
+		text-align:center;
+		padding:5px 0px;
+		margin-right:-1px;
+		border:1px solid #3D3D3D;
+		
+		color: white;
+		background-image: -webkit-gradient(linear,
+		    left bottom,
+		    left top,
+		    color-stop(0, rgb(41,41,41)),
+		    color-stop(1, rgb(148,148,148))
+		);
+		background-image: -moz-linear-gradient(center bottom,
+		    rgb(41,41,41) 0%,
+		    rgb(148,148,148) 100%
+		);
+		
+		
+	}
+	
+	.todo {
+		padding: 10px 5px;
+	}
+}
+
+
+#mainContent {
+	padding: 5px;
+}
+
+.day {
+	background-color: @dirtyWhite;
+	height: 199px;
+	border-right:1px solid @lightGrey;
+	border-bottom:1px solid @lightGrey;
+	header {
+		padding: 5px;
+		margin:0px;
+		font: @headerFont;
+		color: @grey;
+	}
+
+	
+	.todo {
+		
+	}
+}
+
+	
+.day.today {
+	background-color: @lightBlue;
+}
+
+.mon,.tues {
+	border-top: 1px solid @lightGrey;
+}
+
+ol, ul {
+	margin:0;
+	padding:0;
+}
