@@ -1,42 +1,76 @@
 <div id="main" class = "row">
-	<div id="leftPane" class = "column grid_2">
-		<div id="leftContent">
+	<div class = "leftPane column grid_2">
+		<div class="leftContent">
 			<header>Classes</header>
-			<ul class = 'todo'>
+			<ul class = 'classes'>
 				<li>
 					<div class="class">
-						<input type="checkbox" name = "hci" />
+						<input type="checkbox" name = "hci" checked />
 						HCI 570
 					</div>
 				</li>
 				<li>
 					<div class="class">
-						<input type="checkbox" name = "hci" />
-						HCI 570
+						<input type="checkbox" name = "finance" checked />
+						Finance 300
 					</div>
 				</li>
 				<li>
 					<div class="class">
-						<input type="checkbox" name = "hci" />
-						HCI 570
+						<input type="checkbox" name = "handball" checked />
+						Handball
 					</div>
 				</li>
 				<li>
 					<div class="class">
-						<input type="checkbox" name = "hci" />
-						HCI 570
+						<input type="checkbox" name = "accounting" checked />
+						Accounting 301
 					</div>
 				</li>
 				<li>
 					<div class="class">
-						<input type="checkbox" name = "hci" />
-						HCI 570
+						<input type="checkbox" name = "epd" checked />
+						EPD 371
 					</div>
 				</li>
 			</ul>
 			<header>Links</header>
+			<ul class = "links">
+				<li><a href="http://wiscmail.wisc.edu">Wiscmail</a></li>
+				<li><a href="http://mywebspace.wisc.edu">MyWebspace</a></li>
+			</ul>
+			
+			<button class = "createButton">Create Event</button>
+			
+			<div class="createEvent" style = "display:none" title = "Create a New Event:">
+				<form action="#">
+					Name: <input type="text" placeholder="Name: " class = 'eventName'/><br />
+					Class: <select name="classes" class="eventClass">
+						<option value="hci">HCI 570</option>
+						<option value="finance">Finance 300</option>
+						<option value="handball">Handball</option>
+						<option value="accounting">Accounting 301</option>
+						<option value="epd">EPD 397</option>
+					</select>
+					Day: <select name="day" class="eventDay">
+						<option value="mon">Monday</option>
+						<option value="tues">Tuesday</option>
+						<option value="wed">Wednesday</option>
+						<option value="thurs">Thursday</option>
+						<option value="fri">Friday</option>
+						<option value="sat">Saturday</option>
+						<option value="sun">Sunday</option>
+					</select>
+					Start Time: <input type="text" placeholder="Start: " class = 'eventStart'/>
+					Notes: <textarea name="" id="" cols="30" rows="10"></textarea>
+					<hr />
+					<button class = "createViewButton">Create & View Calendar</button>
+					<button class = "createCloseButton">Create & Close</button>
+					<button class = "cancelButton">Cancel</button>
+					
+				</form>
+			</div>
 		</div>
-		
 		
 	</div>
 	<div id="mainPane" class = "column grid_12">
@@ -44,11 +78,58 @@
 			<div class="column grid_6">
 				<div class="day mon">
 					<header>Monday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "ece">
+								<input type="checkbox"/>
+								<span class="time">all day</span>
+								<span class="name">ECE 554 - Study for Quiz</span>
+							</li>
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+							<li class = "epd">
+								<input type="checkbox"/>
+								<span class="time">10:00am</span>
+								<span class="name">EPD 397 - Self-Evaluation</span>
+							</li>
+							<li class = "accounting">
+								<input type="checkbox"/>
+								<span class="time">12:00pm</span>
+								<span class="name">Acct 301 - WileyPlus Homework 10</span>
+							</li>
+							<li class = "finance">
+								<input type="checkbox"/>
+								<span class="time">&nbsp;1:00pm</span>
+								<span class="name">Fin 300 - Read Chapter 3</span>
+							</li>
+							
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="column grid_6">
 				<div class="day tues">
 					<header>Tuesday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "accounting">
+								<input type="checkbox"/>
+								<span class="time">11:00am</span>
+								<span class="name">Acct 301 - Read Chapter 6</span>
+							</li>
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+							<li class = "epd">
+								<input type="checkbox"/>
+								<span class="time">8:00am</span>
+								<span class="name">EPD 397 - Finish First Draft</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -56,11 +137,48 @@
 			<div class="column grid_6">
 				<div class="day wed">
 					<header>Wednesday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "hci">
+								<input type="checkbox"/>
+								<span class="time">9:30am</span>
+								<span class="name">HCI - Homework 3</span>
+							</li>
+							<li class = "ece">
+								<input type="checkbox"/>
+								<span class="time">11:00am</span>
+								<span class="name">ECE 554 - Motorcycle Prototype</span>
+							</li>
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+							<li class = "accounting">
+								<input type="checkbox"/>
+								<span class="time">6:00pm</span>
+								<span class="name">Accounting 301 - Case Study I</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="column grid_6">
 				<div class="day thurs today">
 					<header>Thursday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "hci">
+								<input type="checkbox"/>
+								<span class="time">11:00am</span>
+								<span class="name">HCI - Midterm 1</span>
+							</li>
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -68,16 +186,67 @@
 			<div class="column grid_6">
 				<div class="day fri">
 					<header>Friday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "misc">
+								<input type="checkbox"/>
+								<span class="time">12:00am</span>
+								<span class="name">Grab Lunch with Johnny Appleseed</span>
+							</li>
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+							<li class = "epd">
+								<input type="checkbox"/>
+								<span class="time">8:00am</span>
+								<span class="name">EPD 397 - Engineering Final Paper</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="column grid_3">
 				<div class="day sat">
 					<header>Saturday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "misc">
+								<input type="checkbox"/>
+								<span class="time">all day</span>
+								<span class="name">Chill after a long week</span>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+							<li class = "misc">
+								<input type="checkbox"/>
+								<span class="time">8:00am</span>
+								<span class="name">Make Bloody Mary</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="column grid_3">
 				<div class="day sun">
 					<header>Sunday</header>
+					<div class="todo still">
+						<ul>
+							<li class = "accounting">
+								<input type="checkbox"/>
+								<span class="time">all day</span>
+								<span class="name">Study for the CFA</span>
+							</li>
+						</ul>
+					</div>
+					<div class="todo done">
+						<ul>
+
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
