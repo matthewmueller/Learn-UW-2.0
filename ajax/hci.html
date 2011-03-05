@@ -4,13 +4,9 @@
 			<header class = "goCourseCalendar">Course Events</header>
 			<div class="accordion">
 				<header>Course Info</header>
-				<ul class = "links">
-					<li><a href="http://wiscmail.wisc.edu">Wiscmail</a></li>
-					<li><a href="http://wiscmail.wisc.edu">Wiscmail</a></li>
-					<li><a href="http://wiscmail.wisc.edu">Wiscmail</a></li>
-					<li><a href="http://wiscmail.wisc.edu">Wiscmail</a></li>
-					<li><a href="http://wiscmail.wisc.edu">Wiscmail</a></li>
-				</ul>
+				<p><br />
+					TA: <br /> Erin Spannan's <br /> Office Hours: Wednesday 1:00pm
+				</p>
 				<header>Assignments</header>
 				<ul class = "links">
 					<li><a href = "assignments/hci1.html" class = "openAssignment">Assignment 1</a></li>
@@ -47,10 +43,21 @@
 			
 			<div class="createEvent" style = "display:none" title = "Create a New Event:">
 				<form action="#">
-					<input type="text" placeholder="Name: " class = 'eventName'/><br />
-					<input type="text" placeholder="Start: " class = "eventTime" />
-					<input type="text" placeholder="End: " class = "endInput"/><br />
-					<textarea name="" id="" cols="30" rows="10">Notes:</textarea>
+					Name: <input type="text" placeholder="Name: " class = 'eventName'/><br />
+					Class: <select name="classes" class="eventClass">
+						<option value="hci">HCI 570</option>
+					</select>
+					Day: <select name="day" class="eventDay">
+						<option value="mon">Monday</option>
+						<option value="tues">Tuesday</option>
+						<option value="wed">Wednesday</option>
+						<option value="thurs">Thursday</option>
+						<option value="fri">Friday</option>
+						<option value="sat">Saturday</option>
+						<option value="sun">Sunday</option>
+					</select>
+					Start Time: <input type="text" placeholder="Start: " class = 'eventStart'/>
+					Notes: <textarea name="" id="" cols="30" rows="10"></textarea>
 					<hr />
 					<button class = "createViewButton">Create & View Calendar</button>
 					<button class = "createCloseButton">Create & Close</button>
@@ -69,30 +76,12 @@
 					<header>Monday</header>
 					<div class="todo still">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+							
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+							
 						</ul>
 					</div>
 				</div>
@@ -102,30 +91,12 @@
 					<header>Tuesday</header>
 					<div class="todo still">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+						
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+							
 						</ul>
 					</div>
 				</div>
@@ -137,30 +108,16 @@
 					<header>Wednesday</header>
 					<div class="todo still">
 						<ul>
-							<li>
+							<li class = "hci">
 								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
+								<span class="time">9:30am</span>
+								<span class="name">HCI 570 - Homework 3</span>
 							</li>
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -170,30 +127,16 @@
 					<header>Thursday</header>
 					<div class="todo still">
 						<ul>
-							<li>
+							<li class = "hci">
 								<input type="checkbox"/>
 								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
+								<span class="name">HCI 570 - Midterm 1</span>
 							</li>
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -205,30 +148,12 @@
 					<header>Friday</header>
 					<div class="todo still">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -238,30 +163,12 @@
 					<header>Saturday</header>
 					<div class="todo still">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -271,26 +178,13 @@
 					<header>Sunday</header>
 					<div class="todo still">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 
 						</ul>
 					</div>
 					<div class="todo done">
 						<ul>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
-							<li>
-								<input type="checkbox"/>
-								<span class="time">11:00am</span>
-								<span class="name">Assignment 3</span>
-							</li>
+
 						</ul>
 					</div>
 				</div>

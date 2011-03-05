@@ -5,8 +5,83 @@
 @lightBlue: #E2E5FF;
 @headerFont: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 
+.green {
+	background-color:#53a537;
+	a {
+		color:white;
+	}
+}
+
+.blue {
+	background-color:#3759a5;
+	a {
+		color:white;
+	}
+}
+
+.orange {
+	background-color:#a56637;
+	a {
+		color:white;
+	}
+}
+
+.pink {
+	background-color:#a137a5;
+	a {
+		color:white;
+	}
+}
+
+.yellow {
+	background-color:#9fa537;
+	a {
+		color:white;
+	}	
+}
+
+.grey {
+	background-color: @darkGrey;
+	a {
+		color:white;
+	}
+}
+
+	
+a {
+	text-decoration:none;
+}
+
+li {
+	list-style-type: none;
+	
+}
+
+.logo {
+	height: 36px;
+	width: 114px;
+	background-image:url('../images/logo.png');
+}
+
 #tabs {
 	margin-top:5px;
+	
+	li {
+		float: left;
+/*		display:inline;*/
+		list-style-type: none;
+		padding: 10px;
+		border:1px solid @darkGrey;
+		border-bottom:0px;
+		margin: 5px 5px 0 5px;
+		font-weight:bold;
+	}
+	
+	li.main {
+		padding:0px;
+		border:1px solid #4a0000;
+		border-bottom:none;
+	}
 }
 
 .ui-tabs-nav {
@@ -30,6 +105,8 @@
 
 #main {
 	height: 601px;
+	position:relative;
+	margin-bottom:20px;
 }
 
 #leftPane {
@@ -38,8 +115,7 @@
 	
 }
 
-.leftContent {
-	border-right:1px solid @grey;
+#leftContent {
 	height:100%;
 	
 	header {
@@ -64,7 +140,7 @@
 		
 	}
 	
-	.classes {
+	ul {
 		padding: 10px 5px 10px 5px;
 	}
 	
@@ -77,7 +153,7 @@
 }
 
 .ui-accordion-content {
-	padding: 0px !important;
+/*	padding: 0px !important;*/
 }
 
 
@@ -129,6 +205,17 @@
 			top:2px;
 		}
 		
+		.class {
+			position:relative;
+			top:1px;
+			padding: 3px 5px 2px 5px;
+			color: white;
+			font-weight:bold;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			font-size:75%;
+		}
+		
 		li {
 			margin: 4px 0;
 		}
@@ -138,7 +225,7 @@
 		position:absolute;
 		bottom:5px;
 	
-		.name {
+		.name, .class {
 			text-decoration: line-through;
 		}
 	}
@@ -164,13 +251,17 @@ ol, ul {
 
 .createButton {
 	position:absolute;
-	bottom:0;
+	bottom:1px;
 	width: 125px;
 	left: 7px;
 }
 
 button {
 	height: 30px;
+}
+
+.goCourseCalendar {
+	width: 140px;
 }
 
 /* Dialog */
@@ -186,16 +277,17 @@ button {
 	    rgb(41,41,41) 0%,
 	    rgb(148,148,148) 100%
 	);
+	font-size: 16px;
 }
 
 .ui-dialog .ui-dialog-content { position: relative; border: 1px solid black; padding: .5em 1em; background: white; overflow: auto; zoom: 1; }
 
-.createEvent {
+#createEvent {
 	input, textarea, select {
 /*		padding: 2px;*/
 		width: 100%;
 		margin: 5px 0; 
-		height: 20px;
+		height: 15px;
 	}
 	
 	textarea {

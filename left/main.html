@@ -1,0 +1,70 @@
+<header>Classes</header>
+<ul class = 'classes'>
+	<li>
+		<div class="class">
+			<input type="checkbox" name = "hci" checked />
+			HCI 570
+		</div>
+	</li>
+	<li>
+		<div class="class">
+			<input type="checkbox" name = "finance" checked />
+			Finance 300
+		</div>
+	</li>
+	<li>
+		<div class="class">
+			<input type="checkbox" name = "handball" checked />
+			Handball
+		</div>
+	</li>
+	<li>
+		<div class="class">
+			<input type="checkbox" name = "accounting" checked />
+			Accounting 301
+		</div>
+	</li>
+	<li>
+		<div class="class">
+			<input type="checkbox" name = "epd" checked />
+			EPD 371
+		</div>
+	</li>
+</ul>
+<header>Links</header>
+<ul>
+	<li><a href="http://wiscmail.wisc.edu">WiscMail</a></li>
+	<li><a href="http://my.wisc.edu">MyUW</a></li>
+	<li><a href="http://mywebspace.wisc.edu">MyWebspace</a></li>
+</ul>
+
+<button class = "createButton"><strong style="font-size:18px; color: #444444;">+ </strong> New Event</button>
+
+<div id="createEvent" style = "display:none" title = "Create a New Event:">
+	<form action="#">
+		Name: <input type="text" placeholder="Name: " class = 'eventName'/><br />
+		Class: <select name="classes" class="eventClass">
+			<option value="hci">HCI 570</option>
+			<option value="finance">Finance 300</option>
+			<option value="handball">Handball</option>
+			<option value="accounting">Accounting 301</option>
+			<option value="epd">EPD 397</option>
+		</select>
+		Day: <select name="day" class="eventDay">
+			<option value="mon" class = "mon">Monday</option>
+			<option value="tues" class = "tues">Tuesday</option>
+			<option value="wed" class = "wed">Wednesday</option>
+			<option value="thurs" class = "thurs">Thursday</option>
+			<option value="fri" class = "fri">Friday</option>
+			<option value="sat" class = "sat">Saturday</option>
+			<option value="sun" class = "sun">Sunday</option>
+		</select>
+		Start Time: <input type="text" placeholder="Start: " class = 'eventStart'/>
+		Notes: <textarea name="" id="" cols="30" rows="10"></textarea>
+		<hr />
+		<button class = "createViewButton">Create & View Calendar</button>
+		<button class = "createCloseButton">Create & Close</button>
+		<button class = "cancelButton">Cancel</button>
+		
+	</form>
+</div>

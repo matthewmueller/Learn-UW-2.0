@@ -29,21 +29,231 @@
 <body>
 
   <div id="container" style="display:none">
-    <header class = "row">
-		<div id="tabs">
-			<ul>
-				<li><a href="ajax/main.html">Learn@UW</a></li>
-				<li><a href="ajax/hci.html">HCI 570</a></li>
-				<li><a href="ajax/finance.html">Finance 300</a></li>
-				<li><a href="ajax/handball.html">Handball</a></li>
-				<li><a href="ajax/accounting.html">Accounting 301</a></li>
-				<li><a href="ajax/epd.html">EPD 375</a></li>
-				<li><a href="#">+</a></li>
-			</ul>
+	<div id="tabs" class = "row">
+		<ul>
+			<li class="main"><a href="left/main.html" name = "main">
+				<div class="logo"></div>
+			</a></li>
+			<li class = "green"><a href="left/hci.html" name = "hci">HCI 570</a></li>
+			<li class = "blue"><a href="left/finance.html" name = "finance">Finance 300</a></li>
+			<li class = "orange"><a href="left/handball.html" name = "handball">Handball</a></li>
+			<li class = "pink"><a href="left/accounting.html" name = "accounting">Acct 301</a></li>
+			<li class = "yellow"><a href="left/epd.html" name = "epd">EPD 375</a></li>
+			<li class = "grey"><a href="#">+</a></li>
+		</ul>
+	</div>
+	
+	<div id="main" class = "row">
+		<div class = "leftPane column grid_2">
+			<div id="leftContent" class = 'main'>
+				<!-- Pull from AJAX -->
+			</div>
 		</div>
-    </header>
+		
+		<div id="mainPane" class = "column grid_12">
+			<div class="calendar">
+				
+				<div class="row">
+					<div class="column grid_6">
+						<div class="day mon">
+							<header>Monday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "ece">
+										<input type="checkbox"/>
+										<span class="time">all day</span>
+										<span class="class yellow">ECE 554</span>
+										<span class="name">Study for Quiz</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+									<li class = "epd">
+										<input type="checkbox"/>
+										<span class="time">10:00am</span>
+										<span class="class yellow">EPD 397</span>
+										<span class="name">Self-Evaluation</span>
+									</li>
+									<li class = "accounting">
+										<input type="checkbox"/>
+										<span class="time">12:00pm</span>
+										<span class="class pink">Acct 301</span>
+										<span class="name">WileyPlus Homework 10</span>
+									</li>
+									<li class = "finance">
+										<input type="checkbox"/>
+										<span class="time">1:00pm</span>
+										<span class="class blue">Finance 300</span>
+										<span class="name">Read Chapter 3</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column grid_6">
+						<div class="day tues">
+							<header>Tuesday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "accounting">
+										<input type="checkbox"/>
+										<span class="time">11:00am</span>
+										<span class="class pink">Acct 301</span>
+										<span class="name">Read Chapter 6</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+									<li class = "epd">
+										<input type="checkbox"/>
+										<span class="time">8:00am</span>
+										<span class="class yellow">EPD 397</span>
+										<span class="name">Finish First Draft</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column grid_6">
+						<div class="day wed">
+							<header>Wednesday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "hci">
+										<input type="checkbox"/>
+										<span class="time">9:30am</span>
+										<span class="class green">HCI 570</span>
+										<span class="name">Homework 3</span>
+									</li>
+									<li class = "ece">
+										<input type="checkbox"/>
+										<span class="time">11:00am</span>
+										<span class="class orange">Handball</span>
+										<span class="name">Hitting Session</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+									<li class = "accounting">
+										<input type="checkbox"/>
+										<span class="time">6:00pm</span>
+										<span class="class pink">Acct 301</span>
+										<span class="name">Case Study I</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column grid_6">
+						<div class="day thurs">
+							<header>Thursday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "hci">
+										<input type="checkbox"/>
+										<span class="time">11:00am</span>
+										<span class="class green">HCI 570</span>
+										<span class="name">Midterm 1</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column grid_6">
+						<div class="day fri">
+							<header>Friday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "misc">
+										<input type="checkbox"/>
+										<span class="time">12:00am</span>
+										<span class="name">Grab Lunch with Johnny Appleseed</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+									<li class = "epd">
+										<input type="checkbox"/>
+										<span class="time">8:00am</span>
+										<span class="class yellow">EPD 397</span>
+										<span class="name">Engineering Final Paper</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column grid_3">
+						<div class="day sat">
+							<header>Saturday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "misc">
+										<input type="checkbox"/>
+										<span class="time">all day</span>
+										<span class="name">Chill after a long week</span>
+									</li>
+									<li class = "handball">
+										<input type="checkbox"/>
+										<span class="time">2:00pm</span>
+										<span class="class orange">Handball</span>
+										<span class="name">Session</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+									<li class = "misc">
+										<input type="checkbox"/>
+										<span class="time">8:00am</span>
+										<span class="name">Make Bloody Mary</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column grid_3">
+						<div class="day sun">
+							<header>Sunday</header>
+							<div class="todo still">
+								<ul>
+									<li class = "accounting">
+										<input type="checkbox"/>
+										<span class="time">all day</span>
+										<span class="class pink">Acct 301</span>
+										<span class="name">Study for CFA</span>
+									</li>
+								</ul>
+							</div>
+							<div class="todo done">
+								<ul>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+
   </div> <!-- end of #container -->
 
+<footer style = "text-align:center; color: #ccc;font-weight:bold;margin-top:10px">Brought to you by Matt Mueller, Ross Nordstrom, and Erdem Kaya.</footer>
 
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
   <script src="js/libs/jquery-ui-1.8.10.custom.min.js" type="text/javascript" charset="utf-8"></script>
